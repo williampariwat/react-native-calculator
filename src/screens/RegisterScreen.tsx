@@ -46,20 +46,22 @@ const RegisterScreen = ({ navigation }: Props) => {
 
       <Header>Create Account</Header>
 
+      {/*@ts-ignore*/}
       <TextInput
         label="Name"
         returnKeyType="next"
         value={name.value}
-        onChangeText={text => setName({ value: text, error: '' })}
+        onChangeText={(text) => setName({ value: text, error: '' })}
         error={!!name.error}
         errorText={name.error}
       />
 
+      {/*@ts-ignore*/}
       <TextInput
         label="Email"
         returnKeyType="next"
         value={email.value}
-        onChangeText={text => setEmail({ value: text, error: '' })}
+        onChangeText={(text) => setEmail({ value: text, error: '' })}
         error={!!email.error}
         errorText={email.error}
         autoCapitalize="none"
@@ -68,16 +70,18 @@ const RegisterScreen = ({ navigation }: Props) => {
         keyboardType="email-address"
       />
 
+      {/*@ts-ignore*/}
       <TextInput
         label="Password"
         returnKeyType="done"
         value={password.value}
-        onChangeText={text => setPassword({ value: text, error: '' })}
+        onChangeText={(text) => setPassword({ value: text, error: '' })}
         error={!!password.error}
         errorText={password.error}
         secureTextEntry
       />
 
+      {/*@ts-ignore*/}
       <Button mode="contained" onPress={_onSignUpPressed} style={styles.button}>
         Sign Up
       </Button>

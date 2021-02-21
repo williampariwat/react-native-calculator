@@ -10,6 +10,7 @@ type Props = {
   navigation: Navigation;
 };
 
+
 const HomeScreen = ({ navigation }: Props) => (
   <Background>
     <Logo />
@@ -18,9 +19,11 @@ const HomeScreen = ({ navigation }: Props) => (
     <Paragraph>
       The easiest way to start with your amazing application.
     </Paragraph>
+    {/*@ts-ignore*/}
     <Button mode="contained" onPress={() => navigation.navigate('LoginScreen')}>
       Login
     </Button>
+    {/*@ts-ignore*/}
     <Button
       mode="outlined"
       onPress={() => navigation.navigate('RegisterScreen')}

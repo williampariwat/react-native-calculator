@@ -39,11 +39,12 @@ const LoginScreen = ({ navigation }: Props) => {
 
       <Header>Welcome back.</Header>
 
+      {/*@ts-ignore*/}
       <TextInput
         label="Email"
         returnKeyType="next"
         value={email.value}
-        onChangeText={text => setEmail({ value: text, error: '' })}
+        onChangeText={(text) => setEmail({ value: text, error: '' })}
         error={!!email.error}
         errorText={email.error}
         autoCapitalize="none"
@@ -52,11 +53,12 @@ const LoginScreen = ({ navigation }: Props) => {
         keyboardType="email-address"
       />
 
+      {/*@ts-ignore*/}
       <TextInput
         label="Password"
         returnKeyType="done"
         value={password.value}
-        onChangeText={text => setPassword({ value: text, error: '' })}
+        onChangeText={(text) => setPassword({ value: text, error: '' })}
         error={!!password.error}
         errorText={password.error}
         secureTextEntry
@@ -70,6 +72,7 @@ const LoginScreen = ({ navigation }: Props) => {
         </TouchableOpacity>
       </View>
 
+      {/*@ts-ignore*/}
       <Button mode="contained" onPress={_onLoginPressed}>
         Login
       </Button>
