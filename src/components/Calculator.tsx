@@ -34,7 +34,7 @@ const Calculator = () => {
   return (
     <View style={styles.container}>
       <View style={styles.calculationBox}>
-        <Text style={[styles.calculationText,styles.white]}>{calText}</Text>
+        <Text style={[styles.calculationText,styles.white,{textAlign: 'right'}]}>{calText}</Text>
       </View>
       <View style={styles.buttonPad}>
         <View style={styles.numbers}>
