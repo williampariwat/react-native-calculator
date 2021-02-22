@@ -28,6 +28,8 @@ const Calculator = () => {
   }
 
   const calculate = () => {
+    if (calText === '')
+      return
     setCalText(eval(calText).toString());
   }
 
