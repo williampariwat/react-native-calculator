@@ -36,11 +36,12 @@ const ForgotPasswordScreen = ({ navigation }: Props) => {
 
       <Header>Restore Password</Header>
 
+      {/*@ts-ignore*/}
       <TextInput
         label="E-mail address"
         returnKeyType="done"
         value={email.value}
-        onChangeText={text => setEmail({ value: text, error: '' })}
+        onChangeText={(text) => setEmail({ value: text, error: '' })}
         error={!!email.error}
         errorText={email.error}
         autoCapitalize="none"
@@ -49,6 +50,7 @@ const ForgotPasswordScreen = ({ navigation }: Props) => {
         keyboardType="email-address"
       />
 
+      {/*@ts-ignore*/}
       <Button mode="contained" onPress={_onSendPressed} style={styles.button}>
         Send Reset Instructions
       </Button>

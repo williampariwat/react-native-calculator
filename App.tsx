@@ -5,6 +5,7 @@ import { theme } from './src/core/theme';
 
 const Main = () => (
   <Provider theme={theme}>
+    {/*@ts-ignore*/}
     <App />
   </Provider>
 );
