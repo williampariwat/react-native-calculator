@@ -6,23 +6,21 @@ import Paragraph from "../components/Paragraph";
 import Button from "../components/Button";
 import { Navigation } from "../types";
 import { logoutUser } from "../api/auth-api";
+import { View } from "react-native";
 
 type Props = {
   navigation: Navigation;
 };
 
 const Dashboard = ({ navigation }: Props) => (
-  <Background>
-    <Logo />
-    <Header>Let’s start</Header>
-    <Paragraph>
-      Your amazing app starts here. Open you favourite code editor and start
-      editing this project.
-    </Paragraph>
-    <Button mode="outlined" onPress={() => logoutUser()}>
-      Logout
-    </Button>
-  </Background>
+    <View style={{ flex: 1 }}>
+        {/*@ts-ignore*/}
+        <Calculator style={{ flex: 1 }} />
+        {/*@ts-ignore*/}
+        <Button mode="outlined" onPress={() => logoutUser()}>
+            Logout
+        </Button>
+    </View>
 );
 
 export default memo(Dashboard);
