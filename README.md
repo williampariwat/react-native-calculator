@@ -2,7 +2,7 @@
 
 Login page template from [ReactNativeMarket.com](http://reactnativemarket.com/) 
 
-# Student Name/ID
+## Student Name/ID
 
 NARAN KONGPITHAKSILP (TAN) - 6180233
 
